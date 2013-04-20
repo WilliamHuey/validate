@@ -40,6 +40,8 @@ function validate(obj, constraints) {
 
 // XXX: need to think about how to put this into separate modules for each.
 function validator(name, fn) {
+  // XXX: some kind of dev-only assertion
+  // that validation exists is better performance-wise.
   return 1 === arguments.length
     ? validator[name]
     : validator[name] = fn;
