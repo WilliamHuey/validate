@@ -1,5 +1,8 @@
 {
   "name": "tower-validate",
   "version": "0.0.1",
-  "main": "./index.js"
+  "main": "./index.js",
+  "dependencies": {
+    "part-is-string": "0.0.1"
+  }
 }

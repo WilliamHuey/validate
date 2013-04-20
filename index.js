@@ -1,5 +1,11 @@
 
 /**
+ * Module dependencies.
+ */
+
+var isString = require('part-is-string');
+
+/**
  * Expose `validate`.
  */
 
@@ -44,5 +50,5 @@ validator('gt', function(obj, key, val){
 });
 
 validator('match', function(obj, key, val){
-  return 'string' === typeof obj[key] && obj[key].match(val);
+  return isString(obj) && obj[key].match(val);
 });
