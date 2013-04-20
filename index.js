@@ -3,7 +3,9 @@
  * Module dependencies.
  */
 
-var isString = require('part-is-string');
+var isString = require('part-is-string')
+  , isArray = require('part-is-array')
+  , indexof = require('indexof');
 
 /**
  * Expose `validate`.
@@ -41,6 +43,10 @@ validator('eq', function(obj, key, val){
   return obj[key] == val;
 });
 
+validator('neq', function(obj, key, val){
+  return obj[key] != val;
+});
+
 validator('gte', function(obj, key, val){
   return obj[key] >= val;
 });
@@ -49,6 +55,30 @@ validator('gt', function(obj, key, val){
   return obj[key] > val;
 });
 
+validator('lte', function(obj, key, val){
+  return obj[key] <= val;
+});
+
+validator('lt', function(obj, key, val){
+  return obj[key] < val;
+});
+
 validator('match', function(obj, key, val){
   return isString(obj) && obj[key].match(val);
+});
+
+validator('isString', function(obj, key){
+  return isString(obj[key]);
+});
+
+validator('isArray', function(obj, key){
+  return isArray(obj[key]);
+});
+
+validator('in', function(obj, key, val){
+  return -1 < indexof(val, obj[key]);
+});
+
+validator('nin', function(obj, key, val){
+  return -1 === indexof(val, obj[key]);
 });

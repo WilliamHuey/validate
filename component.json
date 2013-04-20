@@ -4,6 +4,11 @@
   "description": "Tower Validate component",
   "version": "0.0.1",
   "keywords": [],
+  "dependencies": {
+    "part-is-string": "*",
+    "part-is-array": "*",
+    "indexof": "0.0.1"
+  },
   "development": {
     "visionmedia/mocha": "*"
   },

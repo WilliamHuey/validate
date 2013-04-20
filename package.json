@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "main": "./index.js",
   "dependencies": {
-    "part-is-string": "0.0.1"
+    "part-is-string": "*",
+    "part-is-array": "*",
+    "indexof": "0.0.1"
   }
 }
