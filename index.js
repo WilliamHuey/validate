@@ -11,7 +11,13 @@ var isString = require('part-is-string')
  * Expose `validate`.
  */
 
-module.exports = validate;
+exports = module.exports = validate;
+
+/**
+ * Expose `validator`.
+ */
+
+exports.validator = validator;
 
 /**
  * Validate an object against an array of constraints.
