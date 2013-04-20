@@ -38,3 +38,11 @@ validator('eq', function(obj, key, val){
 validator('gte', function(obj, key, val){
   return obj[key] >= val;
 });
+
+validator('gt', function(obj, key, val){
+  return obj[key] > val;
+});
+
+validator('match', function(obj, key, val){
+  return 'string' === typeof obj[key] && obj[key].match(val);
+});
