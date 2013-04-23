@@ -7,7 +7,7 @@
   "dependencies": {
     "part/is-string": "*",
     "part/is-array": "*",
-    "indexof": "0.0.1"
+    "component/indexof": "0.0.1"
   },
   "development": {
     "visionmedia/mocha": "*"
