@@ -5,8 +5,8 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "part-is-string": "*",
-    "part-is-array": "*",
+    "part/is-string": "*",
+    "part/is-array": "*",
     "indexof": "0.0.1"
   },
   "development": {
