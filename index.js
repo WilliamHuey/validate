@@ -48,11 +48,11 @@ function validator(name, fn) {
 }
 
 validator('eq', function(obj, key, val){
-  return obj[key] == val;
+  return obj[key] === val;
 });
 
 validator('neq', function(obj, key, val){
-  return obj[key] != val;
+  return obj[key] !== val;
 });
 
 validator('gte', function(obj, key, val){
