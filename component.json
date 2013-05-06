@@ -7,9 +7,14 @@
   "dependencies": {
     "part/is-string": "*",
     "part/is-array": "*",
-    "component/indexof": "0.0.1"
+    "component/indexof": "*"
   },
+  "local": [],
+  "paths": [
+    "../"
+  ],
   "development": {
+    "timoxley/assert": "*",
     "visionmedia/mocha": "*"
   },
   "scripts": ["index.js"],
